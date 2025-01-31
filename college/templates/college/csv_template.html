@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>CSV First Row</title>
+</head>
+<body>
+    <h1>First Row of CSV</h1>
+    <ul>
+        {% for item in first_row %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Rows</title>
+</head>
+<body>
+    <h1>CSV Data</h1>
+    <table border="1">
+        <tr>
+            {% for item in first_row %}
+                <th>{{ item }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in second_row %}
+                <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>

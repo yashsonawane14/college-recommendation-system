@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Recommendation System</title>
+</head>
+<body>
+    <h1>Welcome to the College Recommendation System!</h1>
+    <form method="POST" action="/predict/">
+        {% csrf_token %}
+        <label for="rank">Rank:</label>
+        <input type="number" name="rank" id="rank" required>
+        
+        <label for="percentile">Percentile:</label>
+        <input type="number" step="0.01" name="percentile" id="percentile" required>
+        
+        <label for="branch">Branch:</label>
+        <input type="text" name="branch" id="branch" required>
+        
+        <!-- Add more input fields for other attributes -->
+        
+        <button type="submit">Predict College</button>
+    </form>
+</body>
+</html>
